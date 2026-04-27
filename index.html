@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ビッコロマート｜戸越銀座のコストコ再販店 - 年会費不要・小分け販売</title>
+<meta name="description" content="戸越銀座のコストコ再販店「ビッコロマート」。年会費不要・小分け販売で、コストコ人気商品を手軽に。毎日直送のディナーロール・ハイローラーほか300点以上。LINEで買い物代行も。品川区平塚2-15-12。">
+<meta name="keywords" content="ビッコロマート,vicolomart,コストコ 戸越銀座,コストコ 品川,コストコ再販 東京,コストコ 小分け,年会費不要">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ビッコロマート｜戸越銀座のコストコ再販店">
+<meta property="og:description" content="年会費不要・小分け販売。コストコ人気商品を戸越銀座で。">
+<meta property="og:url" content="https://vicolomart.netlify.app/">
+<meta property="og:image" content="https://vicolomart.netlify.app/assets/images/logo-wide.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://vicolomart.netlify.app/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .hero{background:#fff;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:56px;min-height:620px;padding:72px 24px;max-width:var(--maxw);margin:0 auto}
+  .hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;color:var(--red);letter-spacing:0.15em;margin-bottom:22px;text-transform:uppercase}
+  .hero-eyebrow::before{content:'';display:block;width:32px;height:2px;background:var(--red)}
+  .hero h1{font-size:clamp(36px,5.2vw,66px);font-weight:900;line-height:1.12;letter-spacing:-0.01em;margin-bottom:28px}
+  .hero h1 .accent{color:var(--red)}
+  .hero h1 .sub{display:block;font-size:0.4em;font-weight:500;color:var(--gray);margin-top:18px;letter-spacing:0.08em}
+  .hero-lead{font-size:17px;color:#333;max-width:500px;margin-bottom:32px}
+  .hero-highlight{background:linear-gradient(180deg,transparent 65%,var(--yellow) 65%);padding:0 2px}
+  .hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+  .hero-visual{position:relative;aspect-ratio:1/1;max-width:500px;margin-left:auto}
+  .hero-logo-wrap{position:relative;z-index:1;width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+  .hero-logo-wrap img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 30px 60px rgba(230,0,39,0.2))}
+  .hero-pill{position:absolute;background:#fff;padding:10px 18px;border-radius:999px;box-shadow:0 10px 30px rgba(17,17,17,0.12);display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;z-index:2}
+  .hero-pill-1{top:10%;left:-6%}
+  .hero-pill-2{bottom:12%;right:-4%;color:var(--blue)}
+  .hero-pill .dot{width:8px;height:8px;border-radius:50%;background:var(--red);animation:pulse 1.8s infinite}
+  .hero-pill-2 .dot{background:var(--blue)}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(230,0,39,0.5)}50%{box-shadow:0 0 0 8px rgba(230,0,39,0)}}
+  .why{background:var(--cream);position:relative;overflow:hidden}
+  .why-intro{max-width:820px;margin:0 auto 60px;text-align:center;position:relative;z-index:1}
+  .why-intro h2{font-size:clamp(28px,4vw,44px);font-weight:900;line-height:1.4;margin:16px 0 28px}
+  .why-intro h2 .hl{background:linear-gradient(180deg,transparent 60%,var(--yellow) 60%);padding:0 4px}
+  .why-intro p{font-size:16px;color:#333;text-align:left;line-height:1.95}
+  .why-intro p strong{color:var(--red);font-weight:700}
+  .push-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative;z-index:1}
+  .push-card{background:#fff;border:1px solid var(--line-c);padding:36px 28px;border-radius:12px;transition:all 0.25s;position:relative;overflow:hidden}
+  .push-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,0.06)}
+  .push-num{position:absolute;top:18px;right:22px;font-family:'Oswald',sans-serif;font-weight:700;font-size:52px;color:rgba(230,0,39,0.1);line-height:1}
+  .push-card:nth-child(2) .push-num{color:rgba(29,74,158,0.12)}
+  .push-badge{display:inline-block;background:var(--red);color:#fff;padding:4px 10px;border-radius:4px;font-size:11px;font-weight:700;margin-bottom:14px}
+  .push-badge.blue{background:var(--blue)}
+  .push-card h3{font-size:22px;font-weight:900;line-height:1.35;margin-bottom:12px}
+  .push-card p{color:#555;font-size:14px}
+  .push-card .kv{margin-top:18px;padding-top:16px;border-top:1px dashed var(--line-c);font-size:13px;color:var(--gray);display:flex;align-items:center;gap:8px}
+  .push-card .kv strong{color:var(--red);font-weight:700;font-size:15px}
+  .push-card:nth-child(2) .kv strong{color:var(--blue)}
+  .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+  .cat-card{background:#fff;border:1px solid var(--line-c);padding:28px 20px;text-align:center;border-radius:8px;transition:all 0.25s}
+  .cat-card:hover{transform:translateY(-4px);border-color:var(--red);box-shadow:0 20px 40px rgba(230,0,39,0.08)}
+  .cat-icon{width:56px;height:56px;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-size:28px;background:#fff3f3}
+  .cat-card:nth-child(2) .cat-icon{background:#f3f6fd}
+  .cat-card:nth-child(3) .cat-icon{background:#fff9f0}
+  .cat-card:nth-child(4) .cat-icon{background:#fbf3f5}
+  .cat-card h3{font-size:16px;font-weight:700;margin-bottom:4px}
+  .cat-card p{font-size:12px;color:var(--gray);line-height:1.5}
+  .line-section{background:linear-gradient(180deg,#f2fbf6 0%,#e6f8ed 100%);position:relative;overflow:hidden}
+  .line-hdr{text-align:center;margin-bottom:56px}
+  .line-hdr .badge-line{display:inline-flex;align-items:center;gap:8px;background:var(--line-green);color:#fff;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:700;margin-bottom:16px}
+  .line-hdr h2{font-size:clamp(30px,4vw,48px);font-weight:900;line-height:1.2}
+  .line-hdr h2 .green{color:var(--line-green)}
+  .line-hdr p{max-width:600px;margin:20px auto 0;color:#444;font-size:15px}
+  .line-layout{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:stretch}
+  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .svc-card{background:#fff;border-radius:16px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid var(--line-c);display:flex;flex-direction:column;gap:12px;position:relative}
+  .svc-card.main{border:2px solid var(--line-green)}
+  .svc-badge-main{position:absolute;top:-10px;left:20px;background:var(--red);color:#fff;padding:4px 12px;border-radius:4px;font-size:11px;font-weight:700}
+  .svc-icon{width:60px;height:60px;border-radius:14px;background:#fff385;display:flex;align-items:center;justify-content:center;font-size:28px}
+  .svc-card:nth-child(2) .svc-icon{background:#ffd0d7}
+  .svc-card:nth-child(3) .svc-icon{background:#d7e3fa}
+  .svc-card:nth-child(4) .svc-icon{background:#d4f3e0}
+  .svc-card h4{font-size:18px;font-weight:900;margin-bottom:4px}
+  .svc-card p{font-size:13px;color:#555;line-height:1.6}
+  .qr-cta{background:var(--line-green);color:#fff;border-radius:20px;padding:36px 28px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:14px;box-shadow:0 20px 60px rgba(6,199,85,0.2)}
+  .qr-cta h3{font-size:22px;font-weight:900;line-height:1.3}
+  .qr-box{background:#fff;padding:14px;border-radius:12px}
+  .qr-box img{width:180px;height:180px;display:block}
+  .qr-cta .btn{background:#fff;color:var(--line-green);width:100%;justify-content:center}
+  .insta-handle{font-family:'Oswald',sans-serif;color:var(--red);font-size:18px;margin-top:8px}
+  @media(max-width:880px){
+    .hero-grid{grid-template-columns:1fr;gap:40px;padding:40px 24px;min-height:0}
+    .hero-visual{max-width:300px;margin:0 auto}
+    .push-grid,.line-layout{grid-template-columns:1fr}
+    .cat-grid{grid-template-columns:repeat(2,1fr)}
+  }
+</style>
+</head>
+<body>
+<div class="topbar"><strong>NEW</strong> 戸越銀座商店街で営業中 ・ LINEで買い物代行＆クーポン配布中</div>
+<header>
+  <div class="nav">
+    <a href="index.html" class="nav-logo"><img src="assets/images/logo-wide.png" alt="Vicolomart ビッコロマート"></a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">トップ</a>
+      <a href="products.html">取扱商品</a>
+      <a href="store.html">店舗情報</a>
+      <a href="news.html">お知らせ</a>
+      <a href="guide.html">初めての方へ</a>
+    </nav>
+    <a href="https://line.me/R/ti/p/@007qzwnx" target="_blank" rel="noopener" class="nav-cta">💬 公式LINE</a>
+    <button class="hamburger" aria-label="メニュー" onclick="this.closest('header').querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">COSTCO RESALE × TOGOSHI GINZA</div>
+      <h1><span class="accent">"ちょっと嬉しい"</span>が<br>ある暮らしを、<br>戸越銀座から。<span class="sub">ビッコロマート ／ Vicolomart</span></h1>
+      <p class="hero-lead">コストコの人気商品を、<span class="hero-highlight">年会費不要・家庭用サイズ</span>で。戸越銀座商店街のど真ん中で、毎日の食卓にちょっと嬉しい発見を。</p>
+      <div class="hero-ctas">
+        <a href="https://line.me/R/ti/p/@007qzwnx" target="_blank" rel="noopener" class="btn btn-line">💬 公式LINEを友だち追加</a>
+        <a href="store.html" class="btn btn-secondary">お店までのアクセス →</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-pill hero-pill-1"><span class="dot"></span> 戸越銀座商店街</div>
+      <div class="hero-pill hero-pill-2"><span class="dot"></span> 年会費不要</div>
+      <div class="hero-logo-wrap"><img src="assets/images/logo-circle-cropped.png" alt="Vicolomart ロゴ" width="400" height="400"></div>
+    </div>
+  </div>
+  <div class="tricolore"><span class="r"></span><span class="w"></span><span class="b"></span></div>
+</section>
+
+<section class="section why" id="why">
+  <div class="container">
+    <div class="why-intro">
+      <div class="eyebrow">WHY VICOLOMART</div>
+      <h2><span class="hl">"ちょっと嬉しい"</span>が<br>ある暮らしを、お届けします。</h2>
+      <p>コストコの商品は、おいしくて、品質も良くて、なによりお得。でも「量が多すぎて使いきれない」「会員になるには遠い」という声もよく聞きます。ビッコロマートは、そんなコストコの人気商品を<strong>年会費不要・家庭用サイズ・小分け</strong>で買える再販店。話題性重視の品揃えで、いつ来ても「ちょっと嬉しい発見」がある売場を目指しています。<strong>「この店があるこの街に住んでよかった」</strong>と思われるお店に——それが私たちの目標です。</p>
+    </div>
+    <div class="push-grid">
+      <div class="push-card"><div class="push-num">01</div><span class="push-badge">年会費ゼロ</span><h3>コストコ年会費<br>5,280円不要</h3><p>会員になる必要も、遠い倉庫まで出かける必要もありません。徒歩圏内で、あの人気商品が手に入ります。</p><div class="kv">💳 <span>会員証・車・まとめ買い、全部不要</span></div></div>
+      <div class="push-card"><div class="push-num">02</div><span class="push-badge blue">小分け販売</span><h3>大容量を、<br>家庭で使いやすく</h3><p>コストコの大容量パックを小分けにリパック。「試してみたかったけど量が…」という方も、必要な分だけお得に。</p><div class="kv">🍞 <span>ディナーロール6個入 <strong>¥155</strong>〜</span></div></div>
+      <div class="push-card"><div class="push-num">03</div><span class="push-badge">話題の品揃え</span><h3>SNSで話題の<br>コストコ商品を厳選</h3><p>冷蔵・冷凍食品、即食惣菜、スナック、飲料まで。メディアやSNSで話題の人気商品を毎日仕入れています。</p><div class="kv">🚚 <span>コストコ川崎倉庫から毎日直送</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="category">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">PRODUCTS</div>
+      <h2 class="section-title">取り扱い商品</h2>
+      <p class="section-sub">コストコ川崎倉庫から毎日直送。話題の商品をセレクトしています。</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card"><div class="cat-icon">🧊</div><h3>冷蔵・冷凍食品</h3><p>ハイローラー・冷蔵スイーツ・お惣菜</p></div>
+      <div class="cat-card"><div class="cat-icon">🥐</div><h3>即食・パン・お菓子</h3><p>ディナーロール・マフィン・スナック</p></div>
+      <div class="cat-card"><div class="cat-icon">🧴</div><h3>日用品・消耗品</h3><p>ペーパー類・おむつ・キッチン用品</p></div>
+      <div class="cat-card"><div class="cat-icon">🍷</div><h3>飲料・お酒</h3><p>ワイン・サングリア・炭酸飲料</p></div>
+    </div>
+    <div style="text-align:center;margin-top:40px"><a href="products.html" class="btn btn-secondary">商品一覧をもっと見る →</a></div>
+  </div>
+</section>
+
+<section class="section line-section" id="line">
+  <div class="container">
+    <div class="line-hdr">
+      <span class="badge-line">💬 LINE公式アカウント</span>
+      <h2>公式LINEが、<br><span class="green">いちばん便利</span>です。</h2>
+      <p>お買い物代行・商品お届け・最新情報・クーポン。ビッコロマートのサービスは、すべてLINEからご利用いただけます。</p>
+    </div>
+    <div class="line-layout">
+      <div class="svc-grid">
+        <div class="svc-card main"><div class="svc-badge-main">最重要</div><div class="svc-icon">🛒</div><h4>お買い物代行</h4><p>店頭にないコストコ商品も、代わりに購入してお届け。飲食店の皆様にも大好評のサービスです。</p></div>
+        <div class="svc-card"><div class="svc-icon">📦</div><h4>商品お届け</h4><p>LINEで注文して、取り置きまたはお届け。忙しい日もワンタップで楽に。</p></div>
+        <div class="svc-card"><div class="svc-icon">📣</div><h4>最新情報</h4><p>入荷速報・タイムセールを週2回以上配信。「ほしい！」を逃しません。</p></div>
+        <div class="svc-card"><div class="svc-icon">🎟️</div><h4>お得なクーポン</h4><p>LINE限定クーポンやポイント。クチコミ投稿で 15% OFF も。</p></div>
+      </div>
+      <div class="qr-cta">
+        <div style="font-size:12px;letter-spacing:0.15em;opacity:0.95;font-weight:700">FRIEND ADD</div>
+        <h3>公式LINEを<br>友だち追加</h3>
+        <div class="qr-box"><img src="assets/images/line-qr.png" alt="LINE公式 QRコード" width="180" height="180"></div>
+        <div style="font-size:12px;opacity:0.9">QRをスマホで読み取り</div>
+        <a href="https://line.me/R/ti/p/@007qzwnx" target="_blank" rel="noopener" class="btn">タップして追加 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="instagram">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">INSTAGRAM</div>
+      <h2 class="section-title">最新の入荷・店内は Instagram で</h2>
+      <div class="insta-handle">@vicolomart</div>
+    </div>
+    <!-- SnapWidget: snapwidget.comで@vicolomartを登録後、下のdivをscriptタグで置き換える -->
+    <div id="insta-widget" style="text-align:center;padding:48px;background:#faf9f6;border:1px dashed var(--line-c);border-radius:8px;margin-bottom:32px">
+      <p style="font-size:14px;color:var(--gray)">📌 Instagramの最新投稿がここに自動表示されます</p>
+    </div>
+    <div style="text-align:center"><a href="https://instagram.com/vicolomart" target="_blank" rel="noopener" class="btn btn-primary">📸 @vicolomart をフォロー</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo-wide.png" alt="Vicolomart ビッコロマート" width="176">
+        <p>戸越銀座のコストコ再販店<br>"ちょっと嬉しい"がある暮らしを。<br>〒142-0063 東京都品川区平塚2-15-12</p>
+      </div>
+      <div class="footer-col"><h4>SHOP</h4><a href="index.html">トップ</a><a href="products.html">取扱商品</a><a href="store.html">店舗情報・アクセス</a></div>
+      <div class="footer-col"><h4>SERVICE</h4><a href="guide.html">初めての方へ</a><a href="https://line.me/R/ti/p/@007qzwnx" target="_blank" rel="noopener">公式LINE</a><a href="news.html">お知らせ</a></div>
+      <div class="footer-col"><h4>CONNECT</h4><a href="https://instagram.com/vicolomart" target="_blank" rel="noopener">Instagram @vicolomart</a><a href="https://line.me/R/ti/p/@007qzwnx" target="_blank" rel="noopener">LINE @007qzwnx</a><a href="tel:0364261845">03-6426-1845</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vicolomart ビッコロマート / 株式会社D Style</span>
+      <div class="footer-tricolore"><span class="r"></span><span class="w"></span><span class="b"></span></div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://line.me/R/ti/p/@007qzwnx" target="_blank" rel="noopener" class="fab" title="LINEで注文・お問い合わせ">💬</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ビッコロマート",
+  "alternateName": "Vicolomart",
+  "description": "戸越銀座のコストコ再販店。年会費不要・小分け販売。コストコ人気商品300点以上。LINEで買い物代行も。",
+  "url": "https://vicolomart.netlify.app/",
+  "telephone": "03-6426-1845",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "平塚2-15-12",
+    "addressLocality": "品川区",
+    "addressRegion": "東京都",
+    "postalCode": "142-0063",
+    "addressCountry": "JP"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "11:00",
+    "closes": "20:00"
+  }],
+  "image": "https://vicolomart.netlify.app/assets/images/logo-circle.jpg",
+  "sameAs": ["https://www.instagram.com/vicolomart/","https://page.line.me/007qzwnx"],
+  "priceRange": "¥"
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お知らせ | ビッコロマート｜戸越銀座のコストコ再販店</title>
+<meta name="description" content="ビッコロマートからのお知らせ・入荷情報・イベント情報。最新のコストコ人気商品の入荷情報を定期更新。">
+<meta property="og:title" content="お知らせ | ビッコロマート">
+<meta property="og:url" content="https://vicolomart.netlify.app/news.html">
+<link rel="canonical" href="https://vicolomart.netlify.app/news.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .news-list{max-width:800px;margin:0 auto}
+  .news-item{border-bottom:1px solid var(--line-c);padding:32px 0}
+  .news-item:last-child{border-bottom:none}
+  .news-meta{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+  .news-date{font-size:13px;color:var(--gray);font-family:'Oswald',sans-serif}
+  .news-cat{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:4px}
+  .news-cat.arrivals{background:var(--blue)}
+  .news-cat.event{background:var(--line-green)}
+  .news-item h2{font-size:20px;font-weight:900;margin-bottom:10px;line-height:1.4}
+  .news-item p{font-size:15px;color:#444;line-height:1.8}
+  #news-loading{text-align:center;padding:60px;color:var(--gray)}
+</style>
+</head>
+<body>
+<div class="topbar"><strong>INFO</strong> 入荷情報・イベント情報を定期更新しています</div>
+<header>
+  <div class="nav">
+    <a href="index.html" class="nav-logo"><img src="assets/images/logo-wide.png" alt="Vicolomart ビッコロマート"></a>
+    <nav class="nav-links">
+      <a href="index.html">トップ</a>
+      <a href="products.html">取扱商品</a>
+      <a href="store.html">店舗情報</a>
+      <a href="news.html" class="active">お知らせ</a>
+      <a href="guide.html">初めての方へ</a>
+    </nav>
+    <a href="https://line.me/R/ti/p/@007qzwnx" target="_blank" rel="noopener" class="nav-cta">💬 公式LINE</a>
+    <button class="hamburger" aria-label="メニュー" onclick="this.closest('header').querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">トップ</a> &rsaquo; お知らせ</div>
+    <div class="eyebrow">NEWS</div>
+    <h1>お知らせ・入荷情報</h1>
+    <p>最新の入荷情報・イベント・キャンペーン情報をお届けします。</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="news-list" id="news-list">
+      <div id="news-loading">読み込み中...</div>
+    </div>
+    <div style="text-align:center;margin-top:48px">
+      <p style="font-size:14px;color:var(--gray);margin-bottom:16px">毎日の入荷情報はInstagramとLINEでも配信中</p>
+      <a href="https://instagram.com/vicolomart" target="_blank" rel="noopener" class="btn btn-primary" style="margin-right:12px">📸 Instagram</a>
+      <a href="https://line.me/R/ti/p/@007qzwnx" target="_blank" rel="noopener" class="btn btn-line">💬 LINE</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo-wide.png" alt="Vicolomart ビッコロマート" width="176">
+        <p>戸越銀座のコストコ再販店<br>"ちょっと嬉しい"がある暮らしを。</p>
+      </div>
+      <div class="footer-col"><h4>SHOP</h4><a href="index.html">トップ</a><a href="products.html">取扱商品</a><a href="store.html">店舗情報・アクセス</a></div>
+      <div class="footer-col"><h4>SERVICE</h4><a href="guide.html">初めての方へ</a><a href="https://line.me/R/ti/p/@007qzwnx" target="_blank" rel="noopener">公式LINE</a><a href="news.html">お知らせ</a></div>
+      <div class="footer-col"><h4>CONNECT</h4><a href="https://instagram.com/vicolomart" target="_blank" rel="noopener">Instagram @vicolomart</a><a href="https://line.me/R/ti/p/@007qzwnx" target="_blank" rel="noopener">LINE @007qzwnx</a><a href="tel:0364261845">03-6426-1845</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vicolomart ビッコロマート / 株式会社D Style</span>
+      <div class="footer-tricolore"><span class="r"></span><span class="w"></span><span class="b"></span></div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://line.me/R/ti/p/@007qzwnx" target="_blank" rel="noopener" class="fab" title="LINEで注文・お問い合わせ">💬</a>
+
+<script>
+const catMap = { 'お知らせ': '', '入荷情報': 'arrivals', 'イベント': 'event', 'キャンペーン': 'event' };
+
+fetch('data/news.json')
+  .then(r => r.json())
+  .then(items => {
+    const list = document.getElementById('news-list');
+    list.innerHTML = items.map(item => {
+      const cls = catMap[item.category] || '';
+      return '<div class="news-item">' +
+        '<div class="news-meta">' +
+        '<span class="news-date">' + item.date + '</span>' +
+        '<span class="news-cat ' + cls + '">' + item.category + '</span>' +
+        '</div>' +
+        '<h2>' + item.title + '</h2>' +
+        '<p>' + item.body + '</p>' +
+        '</div>';
+    }).join('');
+  })
+  .catch(() => {
+    document.getElementById('news-loading').textContent = '記事を読み込めませんでした。';
+  });
+</script>
+</body>
+</html>

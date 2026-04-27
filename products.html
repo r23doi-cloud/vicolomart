@@ -32,6 +32,9 @@
   .lineup-cta .btn{background:#fff;color:var(--line-green);font-size:17px;padding:16px 40px}
   .lineup-cta .btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,0.2)}
   .sep{height:1px;background:var(--line-c);margin:0}
+    .card-img{height:180px;overflow:hidden;border-radius:6px 6px 0 0;margin:-24px -24px 16px;background:#f8f8f6}
+  .card-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s}
+  .product-card:hover .card-img img{transform:scale(1.04)}
   @media(max-width:880px){.product-grid{grid-template-columns:1fr 1fr}.lineup-cta{padding:40px 24px}}
   @media(max-width:480px){.product-grid{grid-template-columns:1fr}}
 </style>
@@ -70,11 +73,11 @@
     <div><h2>冷蔵・冷凍食品</h2><p>毎日仕入れる鮮度が命の商品群。コストコ定番からSNS話題作まで。</p></div>
   </div>
   <div class="product-grid">
-    <div class="product-card"><h3>ハイローラー</h3><p>コストコの定番ラップサンド。チキン・ベジ各種。小分けで1本から購入可能。</p><span class="tag popular">人気商品</span></div>
+    <div class="product-card"><div class="card-img"><img src="assets/images/product/p-hairoler.jpg" alt="ハイローラー" loading="lazy"></div><h3>ハイローラー</h3><p>コストコの定番ラップサンド。チキン・ベジ各種。小分けで1本から購入可能。</p><span class="tag popular">人気商品</span></div>
     <div class="product-card"><h3>ロティサリーチキン</h3><p>コストコの丸鶏ロースト。部位ごとに小分け販売。ランチやディナーに。</p><span class="tag popular">人気商品</span></div>
-    <div class="product-card"><h3>冷蔵スイーツ各種</h3><p>ティラミス・チーズケーキなどを1切れから。大人数でなくても楽しめます。</p><span class="tag">日替わり</span></div>
-    <div class="product-card"><h3>お惣菜・デリ</h3><p>グラタン・ラザニアなど本格デリ商品。家族の夕食に、手土産に。</p><span class="tag">入荷次第</span></div>
-    <div class="product-card"><h3>冷凍食品</h3><p>餃子・シュウマイ・冷凍ピザなど。まとめ買いしやすい小分け包装。</p><span class="tag">定番</span></div>
+    <div class="product-card"><div class="card-img"><img src="assets/images/product/p-egg-tart.jpg" alt="エッグタルト" loading="lazy"></div><h3>冷蔵スイーツ各種</h3><p>ティラミス・チーズケーキなどを1切れから。大人数でなくても楽しめます。</p><span class="tag">日替わり</span></div>
+    <div class="product-card"><div class="card-img"><img src="assets/images/product/p-shrimp.jpg" alt="シュリンプカクテル" loading="lazy"></div><h3>お惣菜・デリ</h3><p>グラタン・ラザニアなど本格デリ商品。家族の夕食に、手土産に。</p><span class="tag">入荷次第</span></div>
+    <div class="product-card"><div class="card-img"><img src="assets/images/store/store-interior-3.jpg" alt="冷凍コーナー" loading="lazy"></div><h3>冷凍食品</h3><p>餃子・シュウマイ・冷凍ピザなど。まとめ買いしやすい小分け包装。</p><span class="tag">定番</span></div>
     <div class="product-card"><h3>チーズ・乳製品</h3><p>カークランドシグネチャーのクリームチーズ・パルミジャーノなど。</p><span class="tag">定番</span></div>
   </div>
 </section>
@@ -87,12 +90,12 @@
     <div><h2>即食・パン・お菓子</h2><p>コストコ名物パン類からSNS話題のお菓子まで。</p></div>
   </div>
   <div class="product-grid">
-    <div class="product-card"><h3>ディナーロール</h3><p>コストコの大人気パン。6個入り¥155〜。ふわふわモチモチの食感が癖になる。</p><span class="tag popular">毎日入荷</span></div>
-    <div class="product-card"><h3>マフィン</h3><p>ブルーベリー・チョコ・バナナなど各種。大きめサイズを1個からどうぞ。</p><span class="tag popular">人気商品</span></div>
+    <div class="product-card"><div class="card-img"><img src="assets/images/product/p-scone.jpg" alt="ディナーロール" loading="lazy"></div><h3>ディナーロール</h3><p>コストコの大人気パン。6個入り¥155〜。ふわふわモチモチの食感が癖になる。</p><span class="tag popular">毎日入荷</span></div>
+    <div class="product-card"><div class="card-img"><img src="assets/images/product/p-muffin.jpg" alt="マフィン" loading="lazy"></div><h3>マフィン</h3><p>ブルーベリー・チョコ・バナナなど各種。大きめサイズを1個からどうぞ。</p><span class="tag popular">人気商品</span></div>
     <div class="product-card"><h3>スナック菓子</h3><p>カークランドのミックスナッツ・ポテトチップスなど輸入菓子を少量で。</p><span class="tag">定番</span></div>
-    <div class="product-card"><h3>チョコレート</h3><p>コストコ限定チョコやゴーディバなど。プレゼントにも最適な高品質チョコ。</p><span class="tag">定番</span></div>
+    <div class="product-card"><div class="card-img"><img src="assets/images/product/p-choco-muffin.jpg" alt="チョコマフィン" loading="lazy"></div><h3>チョコレート</h3><p>コストコ限定チョコやゴーディバなど。プレゼントにも最適な高品質チョコ。</p><span class="tag">定番</span></div>
     <div class="product-card"><h3>グラノーラ・シリアル</h3><p>大容量で話題のグラノーラを200g単位から。朝食やおやつに。</p><span class="tag">入荷次第</span></div>
-    <div class="product-card"><h3>輸入菓子各種</h3><p>SNSで話題のコストコ限定菓子を厳選入荷。旬の商品を随時ご提供。</p><span class="tag">季節限定</span></div>
+    <div class="product-card"><div class="card-img"><img src="assets/images/product/p-anko-crois.jpg" alt="輸入菓子" loading="lazy"></div><h3>輸入菓子各種</h3><p>SNSで話題のコストコ限定菓子を厳選入荷。旬の商品を随時ご提供。</p><span class="tag">季節限定</span></div>
   </div>
 </section>
 
@@ -104,7 +107,7 @@
     <div><h2>日用品・消耗品</h2><p>コストコの大容量日用品をご家庭サイズで。</p></div>
   </div>
   <div class="product-grid">
-    <div class="product-card"><h3>ペーパー類</h3><p>トイレットペーパー・ペーパータオルを1ロールから。大容量品をムダなく。</p><span class="tag">定番</span></div>
+    <div class="product-card"><div class="card-img"><img src="assets/images/product/p-towel.jpg" alt="カークランドペーパータオル" loading="lazy"></div><h3>ペーパー類</h3><p>トイレットペーパー・ペーパータオルを1ロールから。大容量品をムダなく。</p><span class="tag">定番</span></div>
     <div class="product-card"><h3>おむつ・ベビー用品</h3><p>カークランドのおむつをサイズ別に小分け販売。コスパ重視のご家庭に。</p><span class="tag">人気商品</span></div>
     <div class="product-card"><h3>キッチン用品</h3><p>ジップロック・ラップ・保存袋など使いやすいサイズで販売。</p><span class="tag">定番</span></div>
     <div class="product-card"><h3>洗剤・クリーナー</h3><p>大容量洗剤を小分けで。環境に優しいコストコブランド製品も。</p><span class="tag">定番</span></div>

@@ -86,6 +86,13 @@
   .qr-box img{width:180px;height:180px;display:block}
   .qr-cta .btn{background:#fff;color:var(--line-green);width:100%;justify-content:center}
   .insta-handle{font-family:'Oswald',sans-serif;color:var(--red);font-size:18px;margin-top:8px}
+    .photo-strip-wrap{overflow:hidden;line-height:0}
+  .photo-strip{display:flex;gap:3px;height:200px}
+  .strip-item{flex:1;overflow:hidden;position:relative}
+  .strip-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.5s ease}
+  .strip-item:hover img{transform:scale(1.07)}
+  .strip-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.55));color:#fff;font-size:12px;font-weight:700;padding:20px 10px 8px;text-align:center;letter-spacing:0.05em}
+  @media(max-width:880px){.photo-strip{height:130px}.strip-label{display:none}}
   @media(max-width:880px){
     .hero-grid{grid-template-columns:1fr;gap:40px;padding:40px 24px;min-height:0}
     .hero-visual{max-width:300px;margin:0 auto}
@@ -131,6 +138,17 @@
   <div class="tricolore"><span class="r"></span><span class="w"></span><span class="b"></span></div>
 </section>
 
+
+<div class="photo-strip-wrap">
+  <div class="photo-strip">
+    <div class="strip-item"><img src="assets/images/store/store-sign.jpg" alt="ビッコロマート 戸越銀座" loading="lazy"><div class="strip-label">戸越銀座商店街</div></div>
+    <div class="strip-item"><img src="assets/images/product/p-hairoler.jpg" alt="ハイローラー" loading="lazy"><div class="strip-label">ハイローラー</div></div>
+    <div class="strip-item"><img src="assets/images/product/p-egg-tart.jpg" alt="エッグタルト" loading="lazy"><div class="strip-label">エッグタルト</div></div>
+    <div class="strip-item"><img src="assets/images/store/store-interior-1.jpg" alt="店内の様子" loading="lazy"><div class="strip-label">店内の様子</div></div>
+    <div class="strip-item"><img src="assets/images/product/p-croissant.jpg" alt="クロワッサン" loading="lazy"><div class="strip-label">クロワッサン</div></div>
+    <div class="strip-item"><img src="assets/images/product/p-shrimp.jpg" alt="シュリンプカクテル" loading="lazy"><div class="strip-label">シュリンプ</div></div>
+  </div>
+</div>
 <section class="section why" id="why">
   <div class="container">
     <div class="why-intro">

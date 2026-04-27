@@ -29,6 +29,16 @@
   .access-card .icon{font-size:36px;margin-bottom:12px}
   .access-card h3{font-size:16px;font-weight:700;margin-bottom:8px;color:var(--red)}
   .access-card p{font-size:14px;color:#555;line-height:1.6}
+    .gallery-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:8px;margin-top:0}
+  .gallery-main{overflow:hidden;border-radius:8px;grid-row:span 2}
+  .gallery-main img{width:100%;height:100%;object-fit:cover;display:block;border-radius:8px}
+  .gallery-sub{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .gallery-sub a{overflow:hidden;border-radius:8px;display:block}
+  .gallery-sub img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform 0.4s}
+  .gallery-sub a:hover img{transform:scale(1.04)}
+  .gallery-main a{display:block;height:100%}
+  .gallery-main a:hover img{transform:scale(1.03);transition:transform 0.4s}
+  @media(max-width:880px){.gallery-grid{grid-template-columns:1fr;height:auto}}
   @media(max-width:880px){.store-grid,.access-grid{grid-template-columns:1fr}.map-wrap{aspect-ratio:4/3}.store-info-card{padding:24px}}
 </style>
 </head>
@@ -117,6 +127,24 @@
   </div>
 </section>
 
+
+<section class="section" style="padding:60px 0">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">GALLERY</div>
+      <h2 class="section-title">店内・外観ギャラリー</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-main"><a href="assets/images/store/store-interior-1.jpg" target="_blank"><img src="assets/images/store/store-interior-1.jpg" alt="ビッコロマート店内（棚・レジカウンター）" loading="lazy"></a></div>
+      <div class="gallery-sub">
+        <a href="assets/images/store/store-sign.jpg" target="_blank"><img src="assets/images/store/store-sign.jpg" alt="ビッコロマート看板・戸越銀座商店街" loading="lazy"></a>
+        <a href="assets/images/store/store-front.jpg" target="_blank"><img src="assets/images/store/store-front.jpg" alt="ビッコロマート正面入口" loading="lazy"></a>
+        <a href="assets/images/store/store-interior-2.jpg" target="_blank"><img src="assets/images/store/store-interior-2.jpg" alt="店内通路" loading="lazy"></a>
+        <a href="assets/images/store/store-interior-3.jpg" target="_blank"><img src="assets/images/store/store-interior-3.jpg" alt="冷凍・冷蔵コーナー" loading="lazy"></a>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="access-section">
   <div class="container">
     <div class="section-header">
